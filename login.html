@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/lgin.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -43,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="conversor.html">
+              <a class="nav-link" href="index.html">
                 Conversão
               </a>
             </li>
@@ -73,14 +74,26 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">AI Bank</h1>
-      <p class="lead">
-       Bem-vindo ao AI Bank: a evolução do sistema financeiro. Unimos inteligência artificial de ponta e segurança máxima para oferecer uma experiência bancária fluida, inteligente e totalmente personalizada para você.
-      </p>
-      <p>
-        Back to <a href="/conversor.html">the conversor page</a> minus
-        the navbar.
-      </p>
+ <form class="form-signin">
+      <img class="mb-4" src="https://uxwing.com/wp-content/themes/uxwing/download/banking-finance/bank-account-icon.png" 
+      alt="" width="75" 
+      height="80"
+      style="margin-left: 115px;">
+      <h1 class="h3 mb-3 font-weight-normal text-dark"
+      style="margin-left: 80px;"
+      >Faça Login</h1>
+      <label for="inputEmail" class="sr-only">Email</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+      <label for="inputPassword" class="sr-only">Senha</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="*********" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Lembrar senha
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Logar</button>
+    </form>
+
     </main>
 
     <footer class="footer">
