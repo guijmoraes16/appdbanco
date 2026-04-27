@@ -23,7 +23,6 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/conversor.css" rel="stylesheet" />
-    <link href="assets/css/conversor.js" rel="stylesheet" />
   </head>
 
   <body>
@@ -83,14 +82,14 @@
           
           <div class="form-group">
             <label for="amount" class="small">Valor:</label>
-            <input type="number" class="form-control form-control-sm" id="amount" placeholder="0.00" style="border-radius: 10px;">
+            <input type="number" class="form-control form-control-sm" id="valor" placeholder="0.00" style="border-radius: 10px;">
           </div>
 
           <div class="row">
             <div class="col-6">
               <div class="form-group">
                 <label for="fromCurrency" class="small">De:</label>
-                <select class="form-control form-control-sm" id="fromCurrency" style="border-radius: 10px;">
+                <select class="form-control form-control-sm" id="moedaOrigem" style="border-radius: 10px;">
                   <option value="BRL">BRL (Real)</option>
                   <option value="USD">USD (Dólar)</option>
                   <option value="EUR">EUR (Euro)</option>
@@ -103,7 +102,7 @@
             <div class="col-6">
               <div class="form-group">
                 <label for="toCurrency" class="small">Para:</label>
-                <select class="form-control form-control-sm" id="toCurrency" style="border-radius: 10px;">
+                <select class="form-control form-control-sm" id="moedaDestino" style="border-radius: 10px;">
                   <option value="USD" selected>USD (Dólar)</option>
                   <option value="BRL">BRL (Real)</option>
                   <option value="EUR">EUR (Euro)</option>
@@ -120,8 +119,8 @@
 
           <div class="mt-3 text-center">
            
-            <div id="result" class="alert alert-success py-2 small" style="border-radius: 10px;">
-              Aguardando valor...
+            <div id="resultado" class="alert alert-success py-2 small" style="border-radius: 10px;">
+              Resultado: <span id="convertedAmount">0.00</span>
             </div>
           </div>
         </div>
@@ -165,5 +164,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/conversor.js">
+    </script>
   </body>
 </html>
